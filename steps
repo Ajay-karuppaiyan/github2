@@ -1,0 +1,11 @@
+git clone link
+cd folder name
+git status
+git add filename
+git commit -m"sometext"
+git push origin main
+git pull -----it is used to pull the data from git
+
+cd .. ---to change the next folder
+cd name of the folder that we want to swap
+git init ---to initialize the folder
