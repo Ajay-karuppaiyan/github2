@@ -11,4 +11,6 @@ cd name of the folder that we want to swap
 git init ---to initialize the folder
 
 git branch
-git branch -m main
+git branch -m main (change branch to main)
+git branch -a (to check all available branches)
+git checkout git-branch-1(to swap branch)
