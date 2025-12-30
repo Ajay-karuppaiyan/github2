@@ -1,0 +1,81 @@
+/* Page background */
+.signin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #f5f5f5);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Card */
+.signin-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.signin-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Inputs */
+.signin-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.signin-card input:focus {
+  border-color: #1976d2;
+}
+
+/* Button */
+.signin-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signin-card button:hover {
+  background-color: #1565c0;
+}
+
+.signin-card button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.signin-card p {
+  font-size: 13px;
+}
+
+/* Signup link */
+.signin-card span {
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signin-card span:hover {
+  text-decoration: underline;
+}

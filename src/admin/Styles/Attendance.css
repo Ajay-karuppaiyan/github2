@@ -1,0 +1,123 @@
+.attendance {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.attendance h2 {
+  color: #1f2937;
+}
+
+/* Filter */
+.attendance .filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.attendance .filter label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #44546d;
+}
+
+/* Select dropdown */
+.attendance .filter select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.attendance .filter select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Date inputs */
+.attendance .filter input[type="date"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+.attendance .filter input[type="date"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* "to" text */
+.attendance .to-text {
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.attendance-table th {
+  background: #f3f4f6;
+  text-align: left;
+}
+
+.attendance-table tr:hover {
+  background: #f9fafb;
+}
+
+/* Mark button */
+.mark-btn {
+  background: #62cca8;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.mark-btn:hover {
+  background: #059669;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .attendance .filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attendance .filter input,
+  .attendance .filter select {
+    width: 100%;
+  }
+
+  .attendance .filter .to-text {
+    margin: 5px 0;
+  }
+}

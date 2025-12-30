@@ -1,0 +1,101 @@
+/* Full screen modal background */
+.add-user-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Card */
+.add-user-card {
+  background: #ffffff;
+  width: 420px;
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Title */
+.add-user-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Inputs */
+.add-user-card input,
+.add-user-card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Input focus */
+.add-user-card input:focus,
+.add-user-card select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Buttons container */
+.add-user-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.add-user-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Save button */
+.add-user-buttons button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Cancel button */
+.add-user-buttons button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Hover effects */
+.add-user-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Error text */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

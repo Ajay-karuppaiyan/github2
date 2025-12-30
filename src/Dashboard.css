@@ -1,0 +1,103 @@
+.dashboard-root {
+  min-height: 100vh;
+  background: #f4f6fa;
+}
+
+/* TOPBAR */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background: #1e293b;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 55px;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1001;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.sidebar li:hover {
+  background: #1e293b;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+/* MAIN CONTENT */
+.dashboard-main {
+  padding: 80px 20px 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* CHARTS */
+.charts {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.chart-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.chart-box.wide {
+  width: 100%;
+}
